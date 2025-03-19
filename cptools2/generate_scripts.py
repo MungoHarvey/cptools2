@@ -82,7 +82,7 @@ def load_module_text():
     """returns load module commands"""
     return textwrap.dedent(
         """
-        module load anaconda/5.0.1
+        module load anaconda/2024.02
         source activate cellprofiler
         """
     )
@@ -277,4 +277,3 @@ class BodgeScript(script_generator.AnalysisScript):
             """.format(phase=phase, input_file=input_file)
         )
         self.template += text
-
